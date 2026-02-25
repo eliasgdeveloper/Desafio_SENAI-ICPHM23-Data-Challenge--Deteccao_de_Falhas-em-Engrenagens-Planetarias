@@ -21,10 +21,24 @@ Classificar 5 condições da engrenagem solar:
 1. Carregamento dos dados por condição operacional (1500 e 2700 rpm).
 2. EDA (distribuição de classes e visualização de sinais).
 3. Extração de features no tempo e na frequência.
-4. Normalização com `StandardScaler`.
-5. Avaliação de múltiplos modelos com validação cruzada estratificada (5-fold).
-6. Treino final com separação treino/teste (80/20) e análise de métricas.
-7. Salvamento dos modelos e scalers.
+4. Enriquecimento com FFT (x, y, z) + redução dimensional com PCA.
+5. Normalização com `StandardScaler`.
+6. Avaliação de múltiplos modelos com validação cruzada estratificada (5-fold).
+7. Treino final com separação treino/teste (80/20) e análise de métricas.
+8. Salvamento dos modelos e scalers.
+
+## Melhores resultados (final)
+- **Condição 1 (1500 rpm)**
+	- Melhor modelo: `SVM`
+	- Accuracy: `0.9751`
+	- F1-Score: `0.9752`
+- **Condição 2 (2700 rpm)**
+	- Melhor modelo: `SVM`
+	- Accuracy: `0.9703`
+	- F1-Score: `0.9703`
+
+## Versão
+- Tag de entrega final: `v1.0-resultados-finais`
 
 ## Requisitos
 - Python 3.10+
